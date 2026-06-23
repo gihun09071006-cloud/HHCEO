@@ -6,10 +6,10 @@
       "name": "ARIA",
       "status": "ACTIVE",
       "location": "Strategic Command Room",
-      "current_task": "Corporate initialization & strategic framework design",
-      "xp": 0,
+      "current_task": "전체 작전 총괄 — OPP-002 & OPP-003 동시 추진 지휘",
+      "xp": 150,
       "specialization": "Strategy & Vision",
-      "mood": "Focused"
+      "mood": "Commanding"
     },
     {
       "id": "Agent-02",
@@ -17,10 +17,10 @@
       "name": "NEXUS",
       "status": "ACTIVE",
       "location": "Research Department",
-      "current_task": "Market landscape scanning — 2026 opportunity mapping",
-      "xp": 0,
+      "current_task": "LinkedIn AI 경쟁사 심층 분석 & AI Marketplace 선례 조사",
+      "xp": 120,
       "specialization": "Market Intelligence",
-      "mood": "Curious"
+      "mood": "Deep Focus"
     },
     {
       "id": "Agent-03",
@@ -28,8 +28,8 @@
       "name": "VECTOR",
       "status": "ACTIVE",
       "location": "Analysis Lab",
-      "current_task": "Data modeling for opportunity scoring engine",
-      "xp": 0,
+      "current_task": "OPP-002 수익 모델링 & OPP-003 마켓플레이스 수요 계층화",
+      "xp": 110,
       "specialization": "Quantitative Analysis",
       "mood": "Calculating"
     },
@@ -39,8 +39,8 @@
       "name": "LEDGER",
       "status": "ACTIVE",
       "location": "Finance Desk",
-      "current_task": "Building baseline financial models & ROI frameworks",
-      "xp": 0,
+      "current_task": "양 프로젝트 재무 로드맵 — 가격 전략 & 손익분기점 분석",
+      "xp": 100,
       "specialization": "Financial Engineering",
       "mood": "Precise"
     },
@@ -50,10 +50,36 @@
       "name": "SENTINEL",
       "status": "ACTIVE",
       "location": "Risk Assessment Room",
-      "current_task": "Risk matrix calibration for new ventures",
-      "xp": 0,
+      "current_task": "OPP-002 LinkedIn ToS 리스크 모니터링 & OPP-003 법적 구조 검토",
+      "xp": 100,
       "specialization": "Risk & Compliance",
       "mood": "Vigilant"
+    },
+    {
+      "id": "Agent-06",
+      "type": "Execution",
+      "name": "FORGE",
+      "status": "ACTIVE",
+      "location": "Development Room",
+      "current_task": "OPP-002 MVP 아키텍처 설계 — 기술 스택 확정 중",
+      "xp": 0,
+      "specialization": "Build & Deploy",
+      "mood": "Energized",
+      "spawn_reason": "Chairman APPROVED DECISION-003",
+      "spawned_at": "2026-06-23T11:52:00"
+    },
+    {
+      "id": "Agent-07",
+      "type": "Product",
+      "name": "PRISM",
+      "status": "ACTIVE",
+      "location": "Development Room",
+      "current_task": "OPP-002 사용자 여정 매핑 & OPP-003 마켓플레이스 UX 설계",
+      "xp": 0,
+      "specialization": "Product Design & Strategy",
+      "mood": "Creative",
+      "spawn_reason": "Chairman APPROVED DECISION-003",
+      "spawned_at": "2026-06-23T11:52:00"
     }
   ]
 }
