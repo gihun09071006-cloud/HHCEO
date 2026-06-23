@@ -1,0 +1,19 @@
+{
+  "company": "DANTE CORPORATION",
+  "founded": "2026-06-23",
+  "level": 1,
+  "level_name": "Startup",
+  "xp": 0,
+  "xp_next_level": 1000,
+  "treasury": 0,
+  "revenue_total": 0,
+  "revenue_projected_monthly": 0,
+  "health_score": 72,
+  "agent_count": 5,
+  "agent_max": 5,
+  "projects_active": 0,
+  "projects_completed": 0,
+  "leads_total": 0,
+  "opportunities_detected": 0,
+  "day": 1
+}

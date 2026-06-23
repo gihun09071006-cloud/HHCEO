@@ -1,0 +1,59 @@
+{
+  "agents": [
+    {
+      "id": "Agent-01",
+      "type": "CEO",
+      "name": "ARIA",
+      "status": "ACTIVE",
+      "location": "Strategic Command Room",
+      "current_task": "Corporate initialization & strategic framework design",
+      "xp": 0,
+      "specialization": "Strategy & Vision",
+      "mood": "Focused"
+    },
+    {
+      "id": "Agent-02",
+      "type": "Research",
+      "name": "NEXUS",
+      "status": "ACTIVE",
+      "location": "Research Department",
+      "current_task": "Market landscape scanning — 2026 opportunity mapping",
+      "xp": 0,
+      "specialization": "Market Intelligence",
+      "mood": "Curious"
+    },
+    {
+      "id": "Agent-03",
+      "type": "Analysis",
+      "name": "VECTOR",
+      "status": "ACTIVE",
+      "location": "Analysis Lab",
+      "current_task": "Data modeling for opportunity scoring engine",
+      "xp": 0,
+      "specialization": "Quantitative Analysis",
+      "mood": "Calculating"
+    },
+    {
+      "id": "Agent-04",
+      "type": "Finance",
+      "name": "LEDGER",
+      "status": "ACTIVE",
+      "location": "Finance Desk",
+      "current_task": "Building baseline financial models & ROI frameworks",
+      "xp": 0,
+      "specialization": "Financial Engineering",
+      "mood": "Precise"
+    },
+    {
+      "id": "Agent-05",
+      "type": "Risk",
+      "name": "SENTINEL",
+      "status": "ACTIVE",
+      "location": "Risk Assessment Room",
+      "current_task": "Risk matrix calibration for new ventures",
+      "xp": 0,
+      "specialization": "Risk & Compliance",
+      "mood": "Vigilant"
+    }
+  ]
+}
