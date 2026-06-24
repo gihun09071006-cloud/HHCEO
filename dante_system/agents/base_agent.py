@@ -1,4 +1,4 @@
-import anthropic
+from groq import Groq
 import os
 
 
@@ -8,16 +8,18 @@ class BaseAgent:
         self.name = name
         self.role = role
         self.personality = personality
-        self.client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+        self.client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
     def _call(self, system: str, user: str, max_tokens: int = 1024) -> str:
-        message = self.client.messages.create(
-            model="claude-sonnet-4-6",
+        response = self.client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
             max_tokens=max_tokens,
-            system=system,
-            messages=[{"role": "user", "content": user}]
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user}
+            ]
         )
-        return message.content[0].text
+        return response.choices[0].message.content
 
     def think(self, context: str) -> str:
         system = f"""당신은 DANTE CORPORATION의 {self.role} 에이전트 {self.name}입니다.
