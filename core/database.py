@@ -1,11 +1,13 @@
 import aiosqlite
 import json
+import os
 from datetime import datetime
 
-DB_PATH = "dante_corp.db"
+DB_PATH = os.environ.get("DB_PATH", "/data/dante_corp.db")
 
 
 async def init_db():
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     async with aiosqlite.connect(DB_PATH) as db:
         await db.executescript("""
             CREATE TABLE IF NOT EXISTS agents (

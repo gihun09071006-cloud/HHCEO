@@ -105,7 +105,7 @@ async def cmd_decisions(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 
 async def cmd_report(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
-    async with __import__('aiosqlite').connect("dante_corp.db") as conn:
+    async with __import__('aiosqlite').connect(os.environ.get("DB_PATH","/data/dante_corp.db")) as conn:
         conn.row_factory = __import__('aiosqlite').Row
         async with conn.execute(
             "SELECT * FROM reports ORDER BY id DESC LIMIT 1"

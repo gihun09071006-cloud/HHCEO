@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import aiosqlite
+import os
 from core import database as db
 
 app = FastAPI()
@@ -520,7 +521,7 @@ async def api_state():
     health = await db.get_state("health_score")
     day = await db.get_state("day")
     events = []
-    async with aiosqlite.connect("dante_corp.db") as conn:
+    async with aiosqlite.connect(os.environ.get("DB_PATH","/data/dante_corp.db")) as conn:
         conn.row_factory = aiosqlite.Row
         async with conn.execute(
             "SELECT time, agent, event FROM event_log ORDER BY id DESC LIMIT 50"
