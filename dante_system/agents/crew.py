@@ -1,5 +1,5 @@
-from .base_agent import BaseAgent
-from ..core import database as db
+from agents.base_agent import BaseAgent
+from core import database as db
 
 
 class ARIA(BaseAgent):

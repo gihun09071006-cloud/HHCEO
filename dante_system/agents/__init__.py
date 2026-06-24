@@ -1,3 +1,3 @@
-from .crew import ARIA, NEXUS, VECTOR, LEDGER, SENTINEL, FORGE, PRISM
+from agents.crew import ARIA, NEXUS, VECTOR, LEDGER, SENTINEL, FORGE, PRISM
 
 __all__ = ["ARIA", "NEXUS", "VECTOR", "LEDGER", "SENTINEL", "FORGE", "PRISM"]

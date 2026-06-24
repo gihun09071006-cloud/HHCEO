@@ -4,7 +4,7 @@ from telegram.ext import (
     Application, CommandHandler, CallbackQueryHandler,
     ContextTypes, MessageHandler, filters
 )
-from . import database as db
+from core import database as db
 
 CHAIRMAN_CHAT_ID = int(os.environ.get("CHAIRMAN_CHAT_ID", "0"))
 
